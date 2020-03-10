@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- favicon -->
+
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+  <!-- google font -->
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(0, 6%, 24%);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="content-container">
+    <div class="content-wrapper half-width">
+      <header class="header container">
+        <div class="image-wrapper">
+          <img src="images/logo.svg" alt="Base Apparel logo">
+        </div>
+      </header>
+
+      <div class="hero-mobile image-wrapper">
+        <img src="images/hero-mobile.jpg"
+          alt="Young woman in peach shirt, standing infront of a leafy plant and dark pink wall."
+          class="mobile-img img">
+      </div>
+
+      <div class="copy-wrapper container">
+        <h1>We're <span class="h1-span">coming soon</span></h1>
+        <p>Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        <form action="" method="post" class="email-wrapper" onsubmit="return checkEmail()" novalidate>
+          <input type="email" name="email" id="email" class="email" placeholder="Email Address" required>
+          <div id="errorMessage" class="hidden">Please provide a valid email</div>
+          <button id="submitBtn" class="submit-btn image-wrapper">
+            <img src="images/icon-arrow.svg" alt="" aria-hidden="true" class="arrow-img">
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-desktop half-width">
+      <img src="images/hero-desktop.jpg"
+        alt="Young woman in peach shirt, standing infront of a leafy plant and dark pink wall." class="desktop-img img">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Lizz Rennie</a>.
+    </p>
+  </footer>
+
+  <!-- js -->
+  <script src="script/script.js"></script>
+</body>
+
+</html>
